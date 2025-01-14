@@ -22,7 +22,7 @@ inputs:
     description: "URI of the infrastructure as code manifest(s) to be rendered."
     required: false
   application_type:
-    description: "Design type. Specific one of the following three types: 1) "Kubernetes Manifest", 2) "Docker Compose", or 3) "Helm Chart"
+    description: 'Design type. Specific one of the following three types: 1) "Kubernetes Manifest", 2) "Docker Compose", or 3) "Helm Chart"'
     required: true
   application_url:
     description: "Design's source URI; location of the original manifests"
@@ -153,5 +153,5 @@ runs:
         number: ${{ inputs.prNumber }}
         id: meshmap-snapshot
         message: '[<img src="${{env.RESOURCE_URL}}">](${{env.RESOURCE_URL}})
-          _[View in catalog](https://meshery.layer5.io/catalog/content/design/${{ env.APPLICATION_ID }}), [Edit in playground](https://playground.meshery.io/extension/meshmap?mode=design&design=${{ env.APPLICATION_ID }}) or learn how to [interpret Meshery Designs](https://meshery.layer5.io/academy/learning-paths/mastering-meshery/introduction-to-meshery?chapter=interpreting-meshery-designs)_'
+          _[View in catalog](https://cloud.layer5.io/catalog/content/design/${{ env.APPLICATION_ID }}), [Edit in playground](https://playground.meshery.io/extension/meshmap?mode=design&design=${{ env.APPLICATION_ID }}) or learn how to [interpret Meshery Designs](https://cloud.layer5.io/academy/learning-paths/mastering-meshery/introduction-to-meshery?chapter=interpreting-meshery-designs)_'
         append: false
